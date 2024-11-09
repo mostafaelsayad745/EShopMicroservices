@@ -1,10 +1,14 @@
 
 
 
+using Discount.Grpc;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Application services
+
 // Add services to the container.
 var assambly = typeof(Program).Assembly;
 // add carter router endpoints to container
@@ -19,6 +23,8 @@ builder.Services.AddMediatR(config =>
 	config.AddOpenBehavior(typeof(ValidationBehavior<,>));
 	config.AddOpenBehavior(typeof(LoggingBehavior<,>));
 });
+
+// data services
 
 // add orm marten to container
 builder.Services.AddMarten(opts =>
@@ -35,6 +41,21 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
 	options.Configuration = builder.Configuration.GetConnectionString("Redis")!;
 	//options.InstanceName = "Basket-";
+});
+
+// add grpc client to container
+builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(options =>
+{
+	options.Address = new Uri(builder.Configuration["GrpcConfigs:DiscountUrl"]!);
+}).ConfigurePrimaryHttpMessageHandler(() =>
+{
+	var handler = new HttpClientHandler
+	{
+		ServerCertificateCustomValidationCallback =
+		HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+	};
+
+	return handler;
 });
 
 // add exception handler to container
