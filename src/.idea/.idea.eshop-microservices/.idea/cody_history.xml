@@ -76,6 +76,122 @@
                 </messages>
                 <updatedAt value="2024-09-11T14:01:08.0127273" />
               </chat>
+              <chat>
+                <internalId value="64fbbbae-8a11-4b1e-8c9b-e882f80780a2" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="427edf2b-f4bb-4615-9a46-2a2b69e86d2c" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="cec13065-58c0-4a29-af75-b54df6cacc46" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+              </chat>
+              <chat>
+                <internalId value="580713ff-3149-456a-9b33-1302adc45c11" />
+                <llm>
+                  <llm>
+                    <model value="anthropic/claude-3-5-sonnet-20240620" />
+                    <provider value="Anthropic" />
+                    <tags>
+                      <list>
+                        <option value="gateway" />
+                        <option value="accuracy" />
+                        <option value="recommended" />
+                        <option value="free" />
+                      </list>
+                    </tags>
+                    <title value="Claude 3.5 Sonnet" />
+                    <usage>
+                      <list>
+                        <option value="chat" />
+                        <option value="edit" />
+                      </list>
+                    </usage>
+                  </llm>
+                </llm>
+                <messages>
+                  <list>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="how to start docker compose from termial " />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                    </message>
+                    <message>
+                      <speaker value="HUMAN" />
+                      <text value="how to start docker compose from termial " />
+                    </message>
+                    <message>
+                      <speaker value="ASSISTANT" />
+                      <text value="To start Docker Compose from the terminal, follow these steps:&#10;&#10;1. Open your terminal or command prompt.&#10;&#10;2. Navigate to the directory containing your `docker-compose.yml` file.&#10;&#10;3. Run the following command:&#10;&#10;   ```&#10;   docker-compose up&#10;   ```&#10;&#10;   This command will start all the services defined in your `docker-compose.yml` file.&#10;&#10;Additional options and variations:&#10;&#10;- To run containers in detached mode (in the background):&#10;  ```&#10;  docker-compose up -d&#10;  ```&#10;&#10;- To start a specific service:&#10;  ```&#10;  docker-compose up &lt;service_name&gt;&#10;  ```&#10;&#10;- To build or rebuild images before starting containers:&#10;  ```&#10;  docker-compose up --build&#10;  ```&#10;&#10;- To start containers and force recreation:&#10;  ```&#10;  docker-compose up --force-recreate&#10;  ```&#10;&#10;- To view logs while running in detached mode:&#10;  ```&#10;  docker-compose logs -f&#10;  ```&#10;&#10;- To stop the running containers:&#10;  ```&#10;  docker-compose down&#10;  ```&#10;&#10;Make sure you have Docker and Docker Compose installed on your system before running these commands. Also, ensure that you're in the correct directory with the `docker-compose.yml` file when executing these commands." />
+                    </message>
+                  </list>
+                </messages>
+                <updatedAt value="2024-11-23T22:07:13.8358758" />
+              </chat>
             </list>
           </chats>
           <defaultLlm>
