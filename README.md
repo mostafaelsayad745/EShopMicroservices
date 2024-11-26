@@ -1,4 +1,4 @@
-# eShop Microservices
+# EShop Microservices
 
 This repository contains the **eShop Microservices** project, built with **.NET 8**, leveraging **Domain-Driven Design (DDD)** principles, **CQRS**, and a **Vertical/Clean Architecture** approach. The project demonstrates a modern implementation of a microservices architecture, integrating key features for scalability, maintainability, and modular development.
 
@@ -118,6 +118,3 @@ Contributions are welcome! Feel free to fork the repository, make your changes, 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-```
-
-This file can be saved directly as `README.md` or any other `.md` file name. Let me know if there’s anything else you'd like to tweak!
